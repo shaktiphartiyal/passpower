@@ -14,12 +14,21 @@
 <br/>
 <br/>
 <center>
-    <input type="text" name="passwordx" class="passPowerBox" />
+    Style 1 <br/>
+    <input type="text" name="passwordx" id="passPowerBox" />
+    <hr/>
+    Style 2 <br/>
+    <input type="text" name="passwordx" id="passPowerBox2" />
 </center>
 </body>
 <script type="text/javascript">
     passPower.strengthChecker({
-            selector:".passPowerBox",
+        selector:"#passPowerBox",
+        strengthDisplay:"border"
+    });
+    passPower.strengthChecker({
+        selector:"#passPowerBox2",
+        strengthDisplay:"inside"
     });
 </script>
 </html>
